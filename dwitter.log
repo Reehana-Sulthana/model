@@ -1,0 +1,220 @@
+[06/Jun/2018 15:40:17] INFO [dwitter:21] coming in this function....
+[06/Jun/2018 15:57:13] INFO [dwitter:21] coming in this function....
+[06/Jun/2018 15:58:21] INFO [dwitter:31] from Delete_object function
+[06/Jun/2018 15:58:21] ERROR [dwitter:40] Exception : Like matching query does not exist.
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 33, in Delete_objects
+    instance = Like.objects.get(id=1)
+  File "C:\Users\Reehana Sultana\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Reehana Sultana\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\query.py", line 403, in get
+    self.model._meta.object_name
+dwitter.models.DoesNotExist: Like matching query does not exist.
+[06/Jun/2018 15:58:51] INFO [dwitter:44] from update_objects function
+[06/Jun/2018 15:59:08] INFO [dwitter:10] coming from create_object function....
+[06/Jun/2018 15:59:08] ERROR [dwitter:19] user not found
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 12, in Create_dweet
+    user = User.objects.get(username='kavi')
+  File "C:\Users\Reehana Sultana\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Reehana Sultana\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\query.py", line 403, in get
+    self.model._meta.object_name
+django.contrib.auth.models.DoesNotExist: User matching query does not exist.
+[06/Jun/2018 15:59:31] INFO [dwitter:22] coming from get_objects function....
+[06/Jun/2018 15:59:31] ERROR [dwitter:27] object not exist
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 24, in Get_objects
+    dweeter = Like.objects.get(id=1)
+  File "C:\Users\Reehana Sultana\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Reehana Sultana\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\query.py", line 403, in get
+    self.model._meta.object_name
+dwitter.models.DoesNotExist: Like matching query does not exist.
+[06/Jun/2018 16:00:46] INFO [dwitter:22] coming from get_objects function....
+[06/Jun/2018 16:00:46] ERROR [dwitter:27] object not exist
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 24, in Get_objects
+    dweeter = Like.objects.get(id=1)
+  File "C:\Users\Reehana Sultana\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Reehana Sultana\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\query.py", line 403, in get
+    self.model._meta.object_name
+dwitter.models.DoesNotExist: Like matching query does not exist.
+[06/Jun/2018 16:02:32] INFO [dwitter:22] coming from get_objects function....
+[06/Jun/2018 16:02:32] ERROR [dwitter:27] object not exist
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 24, in Get_objects
+    dweeter = Like.objects.get(id=1)
+  File "C:\Users\Reehana Sultana\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Reehana Sultana\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\query.py", line 403, in get
+    self.model._meta.object_name
+dwitter.models.DoesNotExist: Like matching query does not exist.
+[06/Jun/2018 16:28:34] INFO [dwitter:22] coming from get_objects function....
+[06/Jun/2018 16:28:34] ERROR [dwitter:27] object not exist
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 24, in Get_objects
+    dweeter = Like.objects.get(id=1)
+  File "C:\Users\Reehana Sultana\application\model\Project\venv\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Reehana Sultana\application\model\Project\venv\lib\site-packages\django\db\models\query.py", line 403, in get
+    self.model._meta.object_name
+dwitter.models.DoesNotExist: Like matching query does not exist.
+[07/Jun/2018 14:12:00] INFO [dwitter:33] from Delete_object function
+[07/Jun/2018 14:12:00] ERROR [dwitter:41] Exception : HTTP status code must be an integer.
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\venv\lib\site-packages\django\http\response.py", line 49, in __init__
+    self.status_code = int(status)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'QuerySet'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 39, in Delete_objects
+    return HttpResponse(instance,"deleted",show)
+  File "C:\Users\Reehana Sultana\application\model\Project\venv\lib\site-packages\django\http\response.py", line 283, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\Reehana Sultana\application\model\Project\venv\lib\site-packages\django\http\response.py", line 51, in __init__
+    raise TypeError('HTTP status code must be an integer.')
+TypeError: HTTP status code must be an integer.
+[07/Jun/2018 14:13:29] INFO [dwitter:33] from Delete_object function
+[07/Jun/2018 14:13:29] ERROR [dwitter:41] Exception : Like matching query does not exist.
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 35, in Delete_objects
+    instance = Like.objects.get(id=id)
+  File "C:\Users\Reehana Sultana\application\model\Project\venv\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Reehana Sultana\application\model\Project\venv\lib\site-packages\django\db\models\query.py", line 403, in get
+    self.model._meta.object_name
+dwitter.models.DoesNotExist: Like matching query does not exist.
+[07/Jun/2018 14:14:26] INFO [dwitter:33] from Delete_object function
+[07/Jun/2018 14:14:26] ERROR [dwitter:41] Exception : Like matching query does not exist.
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 35, in Delete_objects
+    instance = Like.objects.get(id=id)
+  File "C:\Users\Reehana Sultana\application\model\Project\venv\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Reehana Sultana\application\model\Project\venv\lib\site-packages\django\db\models\query.py", line 403, in get
+    self.model._meta.object_name
+dwitter.models.DoesNotExist: Like matching query does not exist.
+[07/Jun/2018 14:15:36] INFO [dwitter:24] from get_objects
+[07/Jun/2018 14:15:43] INFO [dwitter:24] from get_objects
+[07/Jun/2018 14:20:29] INFO [dwitter:24] from get_objects
+[07/Jun/2018 14:20:36] INFO [dwitter:24] from get_objects
+[07/Jun/2018 14:20:46] INFO [dwitter:33] from Delete_object function
+[07/Jun/2018 14:20:58] INFO [dwitter:33] from Delete_object function
+[07/Jun/2018 14:22:27] INFO [dwitter:33] from Delete_object function
+[07/Jun/2018 15:46:47] INFO [dwitter:24] from get_objects
+[07/Jun/2018 15:46:47] ERROR [dwitter:35] object not exist
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 29, in Get_objects
+    "user": Like.user.username,
+AttributeError: 'ForwardManyToOneDescriptor' object has no attribute 'username'
+[07/Jun/2018 15:46:59] INFO [dwitter:24] from get_objects
+[07/Jun/2018 15:46:59] ERROR [dwitter:35] object not exist
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 29, in Get_objects
+    "user": Like.user.username,
+AttributeError: 'ForwardManyToOneDescriptor' object has no attribute 'username'
+[07/Jun/2018 15:47:45] INFO [dwitter:24] from get_objects
+[07/Jun/2018 15:47:45] ERROR [dwitter:35] object not exist
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 26, in Get_objects
+    like = Like.objects.get(id=id)
+  File "C:\Users\Reehana Sultana\application\model\Project\venv\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Reehana Sultana\application\model\Project\venv\lib\site-packages\django\db\models\query.py", line 403, in get
+    self.model._meta.object_name
+dwitter.models.DoesNotExist: Like matching query does not exist.
+[07/Jun/2018 15:48:14] INFO [dwitter:24] from get_objects
+[07/Jun/2018 15:48:14] ERROR [dwitter:35] object not exist
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 26, in Get_objects
+    like = Like.objects.get(id=id)
+  File "C:\Users\Reehana Sultana\application\model\Project\venv\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Reehana Sultana\application\model\Project\venv\lib\site-packages\django\db\models\query.py", line 403, in get
+    self.model._meta.object_name
+dwitter.models.DoesNotExist: Like matching query does not exist.
+[07/Jun/2018 15:49:53] INFO [dwitter:24] from get_objects function return all
+[07/Jun/2018 15:49:53] ERROR [dwitter:35] object not exist
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 29, in Get_objects
+    "user": Like.User.username,
+AttributeError: type object 'Like' has no attribute 'User'
+[07/Jun/2018 15:51:49] INFO [dwitter:24] from get_objects function return all
+[07/Jun/2018 15:51:49] ERROR [dwitter:35] object not exist
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 29, in Get_objects
+    "user": Like.User.username,
+AttributeError: type object 'Like' has no attribute 'User'
+[07/Jun/2018 15:53:12] INFO [dwitter:24] from get_objects function return all
+[07/Jun/2018 15:53:12] ERROR [dwitter:35] object not exist
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 26, in Get_objects
+    like = Like.objects.get(id=id)
+  File "C:\Users\Reehana Sultana\application\model\Project\venv\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Reehana Sultana\application\model\Project\venv\lib\site-packages\django\db\models\query.py", line 403, in get
+    self.model._meta.object_name
+dwitter.models.DoesNotExist: Like matching query does not exist.
+[07/Jun/2018 16:00:32] INFO [dwitter:24] from get_objects function return all
+[07/Jun/2018 16:00:32] ERROR [dwitter:34] Exception: Like matching query does not exist.
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 26, in Get_objects
+    like = Like.objects.get(id=id)
+  File "C:\Users\Reehana Sultana\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Reehana Sultana\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\query.py", line 403, in get
+    self.model._meta.object_name
+dwitter.models.DoesNotExist: Like matching query does not exist.
+[07/Jun/2018 16:01:32] INFO [dwitter:24] from get_objects function return all
+[07/Jun/2018 16:01:32] ERROR [dwitter:34] Exception: type object 'Like' has no attribute 'User'
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 29, in Get_objects
+    "user": Like.User.username,
+AttributeError: type object 'Like' has no attribute 'User'
+[07/Jun/2018 16:02:37] INFO [dwitter:24] from get_objects function return all
+[07/Jun/2018 16:02:43] INFO [dwitter:24] from get_objects function return all
+[07/Jun/2018 16:02:50] INFO [dwitter:24] from get_objects function return all
+[07/Jun/2018 16:02:50] ERROR [dwitter:34] Exception: Like matching query does not exist.
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 26, in Get_objects
+    like = Like.objects.get(id=id)
+  File "C:\Users\Reehana Sultana\application\model\Project\venv\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Reehana Sultana\application\model\Project\venv\lib\site-packages\django\db\models\query.py", line 403, in get
+    self.model._meta.object_name
+dwitter.models.DoesNotExist: Like matching query does not exist.
+[07/Jun/2018 16:04:15] INFO [dwitter:24] from get_objects function return all
+[07/Jun/2018 16:04:15] ERROR [dwitter:34] Exception: type object 'Like' has no attribute 'User'
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 29, in Get_objects
+    "user": Like.User.username,
+AttributeError: type object 'Like' has no attribute 'User'
+[07/Jun/2018 16:05:16] INFO [dwitter:24] from get_objects function return all
+[07/Jun/2018 16:08:31] INFO [dwitter:24] from get_objects function return all
+[07/Jun/2018 16:09:13] INFO [dwitter:24] from get_objects function return all
+[07/Jun/2018 16:09:13] ERROR [dwitter:34] Exception: 'str' object has no attribute 'dweet'
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 30, in Get_objects
+    "date": id.dweet
+AttributeError: 'str' object has no attribute 'dweet'
+[07/Jun/2018 16:09:53] INFO [dwitter:24] from get_objects function return all
+[07/Jun/2018 16:11:13] INFO [dwitter:24] from get_objects function return all
+[07/Jun/2018 16:12:43] INFO [dwitter:24] from get_objects function return all
+[07/Jun/2018 16:18:36] INFO [dwitter:24] from get_objects function return all
+[07/Jun/2018 16:19:16] INFO [dwitter:24] from get_objects function return all
+[07/Jun/2018 16:19:16] ERROR [dwitter:34] Exception: type object 'Like' has no attribute 'User'
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 29, in Get_objects
+    "user": Like.User.username,
+AttributeError: type object 'Like' has no attribute 'User'
+[07/Jun/2018 16:21:34] INFO [dwitter:24] from get_objects function return all
+[07/Jun/2018 16:21:34] ERROR [dwitter:34] Exception: 'DeferredAttribute' object has no attribute 'User'
+Traceback (most recent call last):
+  File "C:\Users\Reehana Sultana\application\model\Project\dwitter\views.py", line 29, in Get_objects
+    "user": Like.user_id.User.username,
+AttributeError: 'DeferredAttribute' object has no attribute 'User'
+[07/Jun/2018 16:22:05] INFO [dwitter:24] from get_objects function return all
